@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Lee Elenbaas	Owner	lee [at] elenbaas [dot] org [dot] il
+
+# THANKS
+
+    I expect i will have a long list here in the end
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, CppCMS
+    Normalize.css, jQuery, Modernizr
+    
