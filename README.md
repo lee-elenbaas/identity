@@ -34,5 +34,7 @@ Road Map
 1. Initially just get a password authentication working.
 2. Support Email validation.
 3. Support OAuth identifications.
-
-
+4. Support resource related messages from one user to another
+5. Support messages frm one user to another without an attached resource (chat)
+6. Support client side encription for all the user messages
+7. 
