@@ -38,3 +38,10 @@ Road Map
 5. Support messages frm one user to another without an attached resource (chat)
 6. Support client side encription for all the user messages
 7. 
+
+Technology
+==========
+* Server Side: [CppCMS](http://cppcms.com/)
+* Markdown: [markdown-js](https://github.com/evilstreak/markdown-js) ([sample](http://www.markdownviewer.com/))
+* Crypto: [Stanford Javascript Crypto Library](http://crypto.stanford.edu/sjcl/) or [OpenPGP-js](https://github.com/openpgpjs/openpgpjs) (I will need to support different structure for pub/private pair vs shared secret model of encryption)
+* 
