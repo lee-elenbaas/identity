@@ -5,9 +5,7 @@
 		<title>Identity</title>
 		<link type="text/plain" rel="author" href="humans.txt" />
 		<link rel="stylesheet" href="css/identity.css">
-		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		<script src="js/vendor/jquery-2.0.3.min.js"></script>
-		<script src="js/identity.js"></script>
+		<script src="js/lib/require.js" data-main="js/identity.js" type="application/ecmascript"></script>
 	</head>
 	<body>
 		<h1>Identity</h1>
@@ -17,12 +15,8 @@
 			<a href="humans.txt"><img src="img/humanstxt-isolated-blank.gif" data-alternate-src="http://humanstxt.org/img/oficial-logos/humanstxt-isolated-blank.gif" /></a>
 		</footer>
 		<div style="display:none">
-			<div id="loginForm">
+			<div id="loginEmail">
 				<fieldset>
-					<label class="public">
-						Display Name:
-						<input name="displayName" type="text" maxlength="50" />
-					</label>
 					<label class="trusted">
 						Email:
 						<input name="email" type="email" />
