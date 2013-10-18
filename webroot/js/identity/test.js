@@ -1,6 +1,5 @@
-define(["jquery"], function($){
+define(["jquery", "text!identity/loginEmailView.html!strip"], function($, loginEmailView){
 	$(function(){
-		$('body').text('works');
-//		alert('loaded');
+		$('body').html(loginEmailView);
 	});
 });
