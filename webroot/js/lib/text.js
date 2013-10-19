@@ -58,7 +58,7 @@ define(['module'], function (module) {
             if (typeof XMLHttpRequest !== "undefined") {
                 return new XMLHttpRequest();
             } else if (typeof ActiveXObject !== "undefined") {
-                for (i = 0; i < 3; i += 1) {
+                for (i = 0; i < progIds.length; i += 1) {
                     progId = progIds[i];
                     try {
                         xhr = new ActiveXObject(progId);
