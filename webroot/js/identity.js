@@ -1,8 +1,7 @@
 requirejs.config({
 	baseUrl: "js/lib",
 	paths: { // AMD libraries
-		identity: "../identity",
-		views: "../../views",
+		identity: "../../identity",
 		jquery: "jquery-2.0.3",
 		knockout: "knockout-2.3.0"
 	},

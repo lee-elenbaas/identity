@@ -10,18 +10,20 @@ define(
 			
 				var formElement = $('[data-id-role=login-form]');
 				
-				var html = requirejs('text!'+login.form+'!strip');
-				
-				formElement.html(html);
+				formElement.html(login.form);
 			}
 			
 			function placeLoginChooser() {
 				var formChooser = $('[data-id-role=login-chooser]');
 				
-				var html;
+				var html = '';
 				
-				for(var form in config.login.avaliableForms)
-					html += requirejs('text!'+form.chooser+'!strip');
+				for(var form in config.login.avaliableForms) {
+					if (form === config.login.selectedForm)
+						continue;
+						
+					html += config.login.avaliableForms[form].chooser;
+				}
 					
 				formChooser.html(html);
 			}
