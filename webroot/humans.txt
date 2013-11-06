@@ -12,5 +12,5 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, CppCMS
-    Normalize.css, jQuery, Modernizr
+    Normalize.css, jQuery, Modernizr, RequireJS, KnockoutJS
     
