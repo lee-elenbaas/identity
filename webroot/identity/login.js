@@ -22,14 +22,38 @@ define(
 					if (form === config.login.selectedForm)
 						continue;
 						
-					html += config.login.avaliableForms[form].chooser;
+					html += '<span data-id-form-select="'+form+'">'+config.login.avaliableForms[form].chooser+'</span>';
 				}
 					
 				formChooser.html(html);
+				
+				function onFormSelectClick(e) {
+					var formSelector = $(e.target).closest('[data-id-form-select]');
+					
+					var form = formSelector.data('id-form-select');
+					
+					config.login.selectedForm = form;
+					config.save();
+					
+					formSelector.trigger('id-form-select');
+					
+					return false;
+				}
+				
+				formChooser.on('click', '[data-id-form-select]', onFormSelectClick);
 			}
 			
-			placeLoginForm();
-			placeLoginChooser();
+			function onIdentityFormChange() {
+				placeLoginForm();
+				placeLoginChooser();
+				
+				return false;
+			}
+			
+			var doc = $(document);
+			
+			doc.on('id-form-select', onIdentityFormChange);
+			doc.trigger('id-form-select');
 		});
 	}
 );
