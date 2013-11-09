@@ -63,3 +63,7 @@ Blog
 
 > As i write this i fegured out how wrong i was in this. And how much my life will be easier for going back to my original templating scheme, so i will attempt it now and then go back to see if i have anything else to add.
 
+> I started looking at using KnockoutJS templates for this, and the thing i dislike the most is that template binding always loads the template from the DOM. So i found this: http://ifandelse.com/?p=100 Whe he tweaks the binding to load not just from the dom but also from somewhere else. And i decided to do something similar, and allow for loading from my own template context object.
+
+> I took the time to look into knockout source code and see if i ca find a way to do what it is i wanted to do. I found that without doing something similar to what he did, but in a different location, i can not customize where templates are searched for.
+
