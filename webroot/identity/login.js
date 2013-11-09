@@ -27,20 +27,21 @@ define(
 					
 				formChooser.html(html);
 				
-				function onFormSelectClick(e) {
-					var formSelector = $(e.target).closest('[data-id-form-select]');
-					
-					var form = formSelector.data('id-form-select');
-					
-					config.login.selectedForm = form;
-					config.save();
-					
-					formSelector.trigger('id-form-select');
-					
-					return false;
-				}
+				formChooser.off('click.identity', '[data-id-form-select]', onFormSelectClick);
+				formChooser.on('click.identity', '[data-id-form-select]', onFormSelectClick);
+			}
+			
+			function onFormSelectClick(e) {
+				var formSelector = $(e.target).closest('[data-id-form-select]');
 				
-				formChooser.on('click', '[data-id-form-select]', onFormSelectClick);
+				var form = formSelector.data('id-form-select');
+				
+				config.login.selectedForm = form;
+				config.save();
+				
+				formSelector.trigger('id-form-select.identity');
+				
+				return false;
 			}
 			
 			function onIdentityFormChange() {
@@ -52,8 +53,8 @@ define(
 			
 			var doc = $(document);
 			
-			doc.on('id-form-select', onIdentityFormChange);
-			doc.trigger('id-form-select');
+			doc.on('id-form-select.identity', onIdentityFormChange);
+			doc.trigger('id-form-select.identity');
 		});
 	}
 );

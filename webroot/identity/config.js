@@ -29,6 +29,7 @@ define(
 		
 		function save() { // TODO: mperhaps load/save should use this more
 			localStorage.setItem('identity-config', JSON.stringify(config));
+			alert('saved');
 		}
 		
 		function load() {
@@ -40,7 +41,7 @@ define(
 			if (typeof loaded !== 'object')
 				loaded = {};
 				
-			config = $.extend(loaded, initialConfig);
+			config = $.extend(deep, loaded, initialConfig);
 		}
 		
 		return config;
