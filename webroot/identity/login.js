@@ -55,6 +55,11 @@ define(
 			
 			doc.on('id-form-select.identity', onIdentityFormChange);
 			doc.trigger('id-form-select.identity');
+			
+			return {
+				onIdentityFormChange: onIdentityFormChange,
+				onIdentityFormChange: onIdentotyFormChange
+			};
 		});
 	}
 );
