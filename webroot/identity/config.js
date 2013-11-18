@@ -1,22 +1,14 @@
-define(
-	[
-		"jquery", 
-		'text!identity/views/loginByUserPassForm.html!strip', 
-		'text!identity/views/loginByUserPassChooser.html!strip', 
-		'text!identity/views/loginByEmailForm.html!strip', 
-		'text!identity/views/loginByEmailChooser.html!strip'
-	], 
-	function($, loginByUserPassForm, loginByUserPassChooser, loginByEmailForm, loginByEmailChooser) {
+define([jquery], function($) {
 		var initialConfig = {
 			login: {
 				avaliableForms: {
 					loginByUserPass: {
-						form: loginByUserPassForm,
-						chooser: loginByUserPassChooser
+						form: 'loginByUserPassForm',
+						chooser: 'loginByUserPassChooser'
 					},
 					loginByEmail: {
-						form: loginByEmailForm,
-						chooser: loginByEmailChooser
+						form: 'loginByEmailForm',
+						chooser: 'loginByEmailChooser'
 					}
 				},
 				selectedForm: 'loginByEmail'
