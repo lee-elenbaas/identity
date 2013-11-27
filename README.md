@@ -49,6 +49,12 @@ Technology
 Blog
 ====
 
+2013-11-27
+
+> I been using the time to learn some more about RequireJS and AMD and how it shapes the way i think web applications should be written, by writing a small syntactic sugar plugin for jQuery for easier use of knockout.
+> The core of the identity service is a client side identity-host pluggable with login method AMD modules for providing the login functionality.
+> The identity AMD modules will configure what login modules exists, each login method will contain a client side module that will be responsible to access the login method. Each login method will 
+
 2013-11-06
 
 > I took the initial steps to use requireJS and build a plugable login form that will allow placing the login form and choosing between login forms. It forced me to start on some framework tasks, like orgenizing the folders, and placing the views in separate html files.
