@@ -10,7 +10,9 @@ define(
 			
 				var formElement = $('['+config.general.roleAttribute+'='+config.login.loginFormRole+']');
 				
-				formElement.html(login.form);
+				if (formElement.length) {
+					var currentLoginMethod = config.login
+				}
 			}
 			
 			function placeLoginChooser() {
