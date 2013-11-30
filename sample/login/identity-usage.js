@@ -11,7 +11,7 @@ requirejs.config({
 			"../lib/knockout-3.0.0.js"
 		],
 		"jquery-knockout-plugin": "../../src/jquery-knockout-plugin",
-		"identity": "../src/js"
+		"identity": "../../src/identity"
 	}
 });
 

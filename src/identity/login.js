@@ -1,14 +1,14 @@
 define(
 	[
 		"jquery", 
-		"identity/config"
+		"./login/config"
 	], 
 	function($, config) {
 		$(function() {
 			function placeLoginForm() {
 				var login = config.login.avaliableForms[config.login.selectedForm];
 			
-				var formElement = $('[data-id-role=login-form]');
+				var formElement = $('['+config.general.roleAttribute+'='+config.login.loginFormRole+']');
 				
 				formElement.html(login.form);
 			}
