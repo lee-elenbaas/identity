@@ -15,4 +15,4 @@ requirejs.config({
 	}
 });
 
-requirejs(["identity/login/host"]);
+requirejs(["identity/login"]);

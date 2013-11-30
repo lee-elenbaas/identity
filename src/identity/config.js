@@ -1,3 +1,5 @@
+"use string";
+
 define([], function() {
 	// general identity config
 	return {

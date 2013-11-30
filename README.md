@@ -21,6 +21,12 @@ This will be based on 2 parts:
 * Static Files: (Html, JS, CSS, Images)
 * CppCMS application that will provide RESTfull API for performing all actions
 
+The Client side application will be simple HTML running JS orgenized as RequireJS AMD modules.
+
+Modules:
+1. config -- main configuration modules
+2. login - handling the login options from the client side. This module will depend on the activeLoginModule defined in the configuration, the login module will me the client side handling of a particular login method. It will have a _renderLoginForm_ method that recieves as a parameter the jQuery selector of where the login form should be located in the document, and is responsible for communicating with the server side handling of that login method from the rendered form.
+
 Data
 ====
 
