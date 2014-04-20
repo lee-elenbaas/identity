@@ -55,6 +55,13 @@ Technology
 Blog
 ====
 
+2013-04-20
+
+> Its been a long time since i worked on this (new work, new home). 
+
+> I been thinking that what i really need is a safe content sharing framework. And for that i want the content to be shared based on specific email addresses, with other having the ability to add metadata on that picture (allowed further sharing, allowed comments and so on).
+> And for pictures at least, the identity of the person sharing and that of the person this picture was shared with can be embedded inside the picture.
+
 2013-11-27
 
 > I been using the time to learn some more about RequireJS and AMD and how it shapes the way i think web applications should be written, by writing a small syntactic sugar plugin for jQuery for easier use of knockout.
