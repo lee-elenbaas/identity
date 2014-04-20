@@ -47,7 +47,7 @@ Road Map
 
 Technology
 ==========
-* Server Side: [CppCMS](http://cppcms.com/)
+* Server Side: [CppCMS](http://cppcms.com/) Tor web service
 * Markdown: [markdown-js](https://github.com/evilstreak/markdown-js) ([sample](http://www.markdownviewer.com/))
 * Crypto: [Stanford Javascript Crypto Library](http://crypto.stanford.edu/sjcl/) or [OpenPGP-js](https://github.com/openpgpjs/openpgpjs) (I will need to support different structure for pub/private pair vs shared secret model of encryption)
 * 
