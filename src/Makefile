@@ -8,12 +8,6 @@ all: run
 
 .PHONY: all clean documentation run statics dependancies
 
-# doxygen documentation generation
-documentation: docs/html/index.html
-
-docs/html/index.html: $(MAIN_CPP) $(MAIN_HEADERS) $(NODE_ADMIN_HEADERS) $(NODE_ADMIN_CONTENT) $(NODE_ADMIN_CPP) $(NODE_API_HEADERS) $(NODE_API_CPP) $(UTILS_HEADERS) $(UTILS_CPP) $(NODE_ADMIN_SKIN)
-	doxygen Doxyfile
-
 # node deamon
 
 build/noded:	\
@@ -81,7 +75,7 @@ include build/dependancies_tmpl.mk
 include build/dependancies_cpp.mk
 
 #configuration
-build/config.js: src/node/config/config_base.js build/node/config/node_whitelist.js build/node/config/client_whitelist.js
+build/config.js: src/ln/config/config_base.js build/node/config/node_whitelist.js build/node/config/client_whitelist.js
 	$(CPP) -E -x c -P -C $< -o $@
 	
 #noded static files
@@ -109,5 +103,5 @@ clean:
 	find . -type f -name "*.gch" | xargs rm -f
 
 # run the node deamon
-run: run/noded run/config.js
-	./noded
+run: run/identity-server run/config.js
+	./identity-server
