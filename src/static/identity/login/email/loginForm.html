@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Identity login by email view</title>
+	</head>
+	<body>
+		<form method="post" action="">
+			<h2>Login using Email</h2>
+			<fieldset>
+				<label class="id-trusted">
+					Email:
+					<input name="email" type="email" placeholder="Email or username..." />
+				</label>
+				<button>Send login link</button>
+				<ol class="id-description">
+					<li>Enter you email</li>
+					<li>
+						For existing users we will:
+						<ol>
+							<li>match it to your existing Identity</li>
+							<li>and email you a direct login link (link will be valid for one time in a 5min window)</li>
+						</ol>
+					</li>
+					<li>
+						For new users we will:
+						<ol>
+							<li>create a new Identity for the email</li>
+							<li>and email you a direct link to configure your new Identity</li>
+						</ol>
+					</li>
+				</ol>
+			</fieldset>
+		</form>
+	</body>
+</html>
